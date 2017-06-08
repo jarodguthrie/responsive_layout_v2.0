@@ -1,0 +1,265 @@
+
+/*-----------------------------------------------------------------
+	Fonts
+-----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+
+/*-----------------------------------------------------------------
+	Bulk styles
+-----------------------------------------------------------------*/
+
+h1, h2, h3, p{
+	font-family: 'Bubbler One', sans-serif;
+	text-align: center;
+}
+
+.container{
+	background-color: #f7f7f7;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+
+/*-----------------------------------------------------------------
+	Main styles
+-----------------------------------------------------------------*/
+.nav{
+	margin-bottom: 2em;
+}
+
+.main-header, .nav{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.name{
+	align-self: center;
+}
+
+
+.nav a{
+	text-decoration: none;
+	display: block;
+	color: #000;
+	background-color: #fff;
+	text-align: center;
+	padding: .4em;
+	border-bottom: 1px solid #ebecec;
+	font-family: 'Bubbler One', sans-serif;
+}
+
+.nav a:hover {
+	color: #0b0b0b;
+	border-bottom-color: #52bab3;
+}
+
+.main-header{
+	background-color: #81adf4;
+
+}
+
+#portfolio{
+	width: 90%;
+	margin: auto;
+	border-bottom: solid 1px #cecccc;
+
+}
+
+.col{
+	margin: 5% 2.5% 5% 2.5%;	
+}
+
+.col img{
+	width: 90%;
+	margin: 0 5% 0 5%;
+	text-align: center;
+}
+
+#skills{
+	margin: 4em 0 4em 0;
+
+}
+
+#contact{
+	padding: 4em 0 2em 0;
+	background-color: #ededed;
+	border-bottom: solid 1px #cecccc;
+}
+
+.name-bottom{
+	float: left;
+	margin-left: 2em;
+}
+
+.footer .footer-home{
+	float: right;
+	margin-right: 2em;
+	text-decoration: none;
+	color: black;
+}
+
+.footer-home a{
+	text-decoration: none;
+}
+
+.footer .nav{
+	display: none;
+}
+
+
+/*------------------------------------------------------------------
+	Media Queries for Larger Screens
+------------------------------------------------------------------*/
+
+/*-----------------------------------------
+	Tablet
+------------------------------------------*/
+
+@media all and (min-width: 769px){
+	.header, .nav{
+		flex-direction: row;
+	}
+	.nav{
+		justify-content: center;
+	}
+	.nav li{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	.nav a{
+		margin-left: 2em;
+		margin-right: 2em; 
+	}
+
+	#home img{
+	}
+/*-----------------------------------------
+	Portfolio Gallery - 2 Columns
+------------------------------------------*/	
+	.col{
+		margin: 5% 0 5% 0;
+	}
+	.banner img{
+		width: 27.5%;
+		margin: auto;
+		margin-left: 5%;
+
+	}
+	.banner p{
+		width: 60%;
+		float: left;
+		margin-left: 2.5%;
+	}
+
+	#home{
+	}
+
+	.primary, .secondary, .third{
+		width: 50%;
+		float: left;
+	}
+	#contact, footer, .clearfix, #portfolio {
+		clear: both;
+	}
+
+
+/*-----------------------------------------
+	Hide mobile footer
+------------------------------------------*/
+		.footer-home{
+		display: none;
+	}
+/*-----------------------------------------
+	New Footer Nav
+------------------------------------------*/
+
+	.footer, .footer .nav{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.footer .nav{
+		margin-bottom: 0;
+	}
+
+	.footer .nav li{
+		padding-right: .5em;
+		padding-left: .5em;
+	}
+
+
+	.name-bottom{
+		margin-right: auto;
+		float: none;
+	}
+	
+	.footer{
+		padding-bottom: 1em;
+	}
+
+
+
+/*-----------------------------------------------
+	Clearfix
+------------------------------------------------*/	
+	.clearfix:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+/*-------------------------------------------------
+	Desktop
+-------------------------------------------------*/
+
+@media all and (min-width: 1025px){
+	.main-header, .main-header .nav{
+		display: flex;
+		flex-direction: row;
+	}
+	.name{
+		margin-right: auto;
+		margin-left: 2em;
+	}
+
+	.nav li{
+		padding: 0;
+	}
+
+	.nav{
+		margin: 2em;
+	}
+
+	.footer{
+		height: 4em;
+		padding-bottom: 0;
+	}
+	.name-bottom{
+		margin: auto;
+		margin-left: 2em;
+	}
+	.footer .nav{
+		margin: auto;
+		margin-right: 2em;
+	}
+/*-----------------------------------------
+	Portfolio Gallery - 3 Columns
+------------------------------------------*/
+
+	.col{
+		margin: auto;
+	}
+	.primary, .secondary, .third {
+		width: 33.3333%;
+	}
+
+
+}
+
+
+
