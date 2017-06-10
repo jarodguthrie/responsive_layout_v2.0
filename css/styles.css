@@ -62,11 +62,11 @@ ul{
 
 }
 
-#portfolio{
+#portfolio, #skills{
 	width: 90%;
-	margin: auto;
+	margin: 5% 5%;
+	padding-bottom: 5%;
 	border-bottom: solid 1px #cecccc;
-
 }
 
 .col{
@@ -79,13 +79,8 @@ ul{
 	text-align: center;
 }
 
-#skills{
-	margin: 4em 0 4em 0;
-
-}
-
 #contact{
-	padding: 4em 0 2em 0;
+	padding: 5% 0 5% 0;
 	background-color: #ededed;
 	border-bottom: solid 1px #cecccc;
 }
@@ -119,7 +114,7 @@ ul{
 	Tablet
 ------------------------------------------*/
 
-@media all and (min-width: 769px){
+@media all and (min-width: 768px){
 	.header, .nav{
 		flex-direction: row;
 	}
@@ -133,9 +128,6 @@ ul{
 	.nav a{
 		margin-left: 2em;
 		margin-right: 2em; 
-	}
-
-	#home img{
 	}
 /*-----------------------------------------
 	Portfolio Gallery - 2 Columns
@@ -217,7 +209,7 @@ ul{
 	Desktop
 -------------------------------------------------*/
 
-@media all and (min-width: 1025px){
+@media all and (min-width: 1024px){
 	.main-header, .main-header .nav{
 		display: flex;
 		flex-direction: row;
@@ -233,6 +225,14 @@ ul{
 
 	.nav{
 		margin: 2em;
+	}
+
+	.profile-image{
+		margin-top: 5% !important;
+	}
+
+	#intro{
+		margin-top: 10%;
 	}
 
 	.footer{
