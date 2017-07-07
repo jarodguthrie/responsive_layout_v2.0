@@ -1,0 +1,68 @@
+%portfolio{
+	width: 90%;
+	margin: 5% 5%;
+	padding-bottom: 5%;
+	border-bottom: solid 1px #cecccc;
+}
+
+.skills{
+	@extend %portfolio;
+}
+
+.col{
+	margin: 5% 2.5% 5% 2.5%;
+	@media all and (min-width: $break-m){
+		margin: 5% 0 5% 0;
+	}	
+	@media all and (min-width: $break-l){
+	}
+	p{
+		margin-left: .75em;
+		margin-right: .75em;
+	}
+}
+
+.col img{
+	width: 90%;
+	margin: 0 5% 0 5%;
+	text-align: center;
+}
+
+#contact{
+	padding: 5% 0 5% 0;
+	background-color: $tertiary-background-color;
+	border-bottom: solid 1px $border-bottom;
+}
+
+.name-bottom{
+	float: left;
+	margin-left: 2em;
+}
+
+.primary, .secondary, .third{
+	@media all and (min-width: $break-m){
+		width: 50%;
+		float: left;	
+	}
+	@media all and (min-width: $break-l){
+		width: 33.3333%;
+	}
+}
+
+
+.banner img{
+	@media all and (min-width: $break-m){
+	width: 27.5%;
+	margin: auto;
+	margin-left: 5%;
+	}
+}
+
+.banner p{
+	@media all and (min-width: $break-m){	
+		width: 60%;
+		float: left;
+		margin-left: 2.5%;
+		@include center-text;
+	}
+}

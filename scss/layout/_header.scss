@@ -1,0 +1,92 @@
+
+%main-header{
+	display: flex;
+	flex-direction: column;
+}
+.main-header{
+	background-color: $header-color;
+	@media all and (min-width: $break-m){
+		padding: .5em;
+	}
+	@media all and (min-width: $break-l){
+		display: flex;
+		flex-direction: row;
+	}
+	.nav{
+		@media all and (min-width: $break-l){
+			display: flex;
+			flex-direction: row;
+		}
+	}
+}
+
+%header {
+	@media all and (min-width: $break-m){
+		flex-direction: row;
+	}
+}
+
+
+.nav{
+	@extend %header;
+	@extend %main-header;
+	margin-bottom: 2em;
+	@media all and (min-width: $break-m){
+		justify-content: center;
+	}
+	@media all and (min-width: $break-l){
+		margin: 2em;		
+	}
+	li {
+		@media all and (min-width: $break-l){
+			padding: 0;
+		}
+	}
+	a {
+		text-decoration: none;
+		display: block;
+		color: $black;
+		background-color: $white;
+		text-align: center;
+		padding: .4em;
+		border-bottom: 1px solid $border-bottom;
+		font-family: 'Bubbler One', sans-serif;
+			&:hover {
+			color: $black;
+			border-bottom-color: $hover;
+		}
+		@media all and (min-width: $break-m){
+			margin-left: 2em;
+			margin-right: 2em; 
+		}
+	}
+}
+
+.name{
+	align-self: center;
+	margin: 0;
+	@media all and (min-width: $break-l){
+		margin-right: auto;
+		margin-left: 2em;
+	}
+}
+
+
+.profile-image{
+	@media all and (min-width: $break-l){
+		margin-top: 5% !important;
+	}
+}
+
+.intro{
+	@media all and (min-width: $break-l){
+		margin-top: 10%;
+	}
+}
+
+
+// ======================================
+//  Button Styles
+// ======================================
+
+

@@ -1,0 +1,55 @@
+%footer{
+	float: right;
+	margin-right: 2em;
+	text-decoration: none;
+	color: $black;
+}
+
+.footer{
+	@media all and (min-width: $break-m){
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.footer-home{
+	@extend %footer;
+	a{
+		text-decoration: none;
+		color: $black;	
+	}
+	@media all and (min-width: $break-m){
+		display: none;
+	}
+
+}
+
+.footer .nav{
+	display: none;
+	@media all and (min-width: $break-m){
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 0;
+	}
+	@media all and (min-width: $break-l){
+		margin: auto;
+		margin-right: 2em;
+	}
+	li {
+		@media all and (min-width: $break-m){
+			margin: 1.5em 0.5em;
+		}			
+	}
+}
+
+.name-bottom{
+	@media all and (min-width: $break-m){
+		margin: 1.5em auto 1.5em 1em;
+		float: none;
+	}
+	@media all and (min-width: $break-l){
+		margin: auto;
+		margin-left: 2em;		
+	}
+}
+

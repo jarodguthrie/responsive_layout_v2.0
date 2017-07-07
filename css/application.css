@@ -1,0 +1,217 @@
+/*------------------------------------------------------------------
+	Import
+------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Bubbler+One");
+/*-----------------------------------------------
+	Clearfix
+------------------------------------------------*/
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/*------------------------------------------------------------------
+	Import
+------------------------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+h1 {
+  font-family: "Bubbler One", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000; }
+
+h2 {
+  font-family: "Bubbler One", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  font-size: 28px; }
+
+h3 {
+  font-family: "Bubbler One", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000; }
+
+p {
+  font-family: "Bubbler One", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000; }
+
+.container {
+  background-color: #f7f7f7; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+/*------------------------------------------------------------------
+	Import
+------------------------------------------------------------------*/
+.nav {
+  display: flex;
+  flex-direction: column; }
+
+.main-header {
+  background-color: #81adf4; }
+  @media all and (min-width: 768px) {
+    .main-header {
+      padding: .5em; } }
+  @media all and (min-width: 1024px) {
+    .main-header {
+      display: flex;
+      flex-direction: row; } }
+  @media all and (min-width: 1024px) {
+    .main-header .nav {
+      display: flex;
+      flex-direction: row; } }
+
+@media all and (min-width: 768px) {
+  .nav {
+    flex-direction: row; } }
+
+.nav {
+  margin-bottom: 2em; }
+  @media all and (min-width: 768px) {
+    .nav {
+      justify-content: center; } }
+  @media all and (min-width: 1024px) {
+    .nav {
+      margin: 2em; } }
+  @media all and (min-width: 1024px) {
+    .nav li {
+      padding: 0; } }
+  .nav a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    padding: .4em;
+    border-bottom: 1px solid #cecccc;
+    font-family: 'Bubbler One', sans-serif; }
+    .nav a:hover {
+      color: #000;
+      border-bottom-color: #52bab3; }
+    @media all and (min-width: 768px) {
+      .nav a {
+        margin-left: 2em;
+        margin-right: 2em; } }
+
+.name {
+  align-self: center;
+  margin: 0; }
+  @media all and (min-width: 1024px) {
+    .name {
+      margin-right: auto;
+      margin-left: 2em; } }
+
+@media all and (min-width: 1024px) {
+  .profile-image {
+    margin-top: 5% !important; } }
+
+@media all and (min-width: 1024px) {
+  .intro {
+    margin-top: 10%; } }
+
+.footer-home {
+  float: right;
+  margin-right: 2em;
+  text-decoration: none;
+  color: #000; }
+
+@media all and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row; } }
+
+.footer-home a {
+  text-decoration: none;
+  color: #000; }
+@media all and (min-width: 768px) {
+  .footer-home {
+    display: none; } }
+
+.footer .nav {
+  display: none; }
+  @media all and (min-width: 768px) {
+    .footer .nav {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0; } }
+  @media all and (min-width: 1024px) {
+    .footer .nav {
+      margin: auto;
+      margin-right: 2em; } }
+  @media all and (min-width: 768px) {
+    .footer .nav li {
+      margin: 1.5em 0.5em; } }
+
+@media all and (min-width: 768px) {
+  .name-bottom {
+    margin: 1.5em auto 1.5em 1em;
+    float: none; } }
+@media all and (min-width: 1024px) {
+  .name-bottom {
+    margin: auto;
+    margin-left: 2em; } }
+
+.skills {
+  width: 90%;
+  margin: 5% 5%;
+  padding-bottom: 5%;
+  border-bottom: solid 1px #cecccc; }
+
+.col {
+  margin: 5% 2.5% 5% 2.5%; }
+  @media all and (min-width: 768px) {
+    .col {
+      margin: 5% 0 5% 0; } }
+  .col p {
+    margin-left: .75em;
+    margin-right: .75em; }
+
+.col img {
+  width: 90%;
+  margin: 0 5% 0 5%;
+  text-align: center; }
+
+#contact {
+  padding: 5% 0 5% 0;
+  background-color: #ededed;
+  border-bottom: solid 1px #cecccc; }
+
+.name-bottom {
+  float: left;
+  margin-left: 2em; }
+
+@media all and (min-width: 768px) {
+  .primary, .secondary, .third {
+    width: 50%;
+    float: left; } }
+@media all and (min-width: 1024px) {
+  .primary, .secondary, .third {
+    width: 33.3333%; } }
+
+@media all and (min-width: 768px) {
+  .banner img {
+    width: 27.5%;
+    margin: auto;
+    margin-left: 5%; } }
+
+@media all and (min-width: 768px) {
+  .banner p {
+    width: 60%;
+    float: left;
+    margin-left: 2.5%;
+    text-align: center;
+    margin: 10% auto; } }
+
+/*# sourceMappingURL=application.css.map */

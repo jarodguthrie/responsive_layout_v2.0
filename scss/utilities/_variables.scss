@@ -1,0 +1,29 @@
+// ======================================
+//  Variables
+// ======================================
+
+// Colors
+
+$header-color: #81adf4;
+$body-background-color: #f7f7f7;
+$tertiary-background-color: #ededed;
+
+$white: #fff;
+$black: #000;
+
+$hover: #52bab3;
+$border-bottom: #cecccc;
+
+// Fonts
+$font-stack-primary: 'Bubbler One', sans-serif;
+$font-stack-secondary: 'Bree Serif', serif;
+
+// Breakpoints
+$break-m: 768px;
+$break-l: 1024px;
+
+$breakpoints: (
+  'med': 768px,
+  'lg': 1024px,
+ )
+
